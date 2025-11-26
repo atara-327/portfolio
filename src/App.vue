@@ -43,10 +43,6 @@ import QiitaIcon from '@/assets/img/qiita-icon.svg';
           <a href="https://sia-songs.ataraman.com" target="_blank">依澄しあ
             歌枠検索</a>
         </li>
-        <li class="py-1">
-          <a href="https://vum.ataraman.com" target="_blank">VUM (VRChat
-            unitypackage manager)</a>
-        </li>
       </ul>
     </div>
     <br />
