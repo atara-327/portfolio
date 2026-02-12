@@ -1,0 +1,46 @@
+---
+import type { Work } from "../data/works";
+
+interface Props {
+  work: Work;
+}
+
+const { work } = Astro.props;
+---
+
+<a 
+  href={`/works/${work.slug}`} 
+  class="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+>
+  <div class="relative overflow-hidden aspect-video">
+    <img 
+      src={work.thumbnail} 
+      alt={work.title} 
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+  </div>
+  
+  <div class="p-5">
+    <div class="flex justify-between items-start mb-2">
+      <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+        {work.title}
+      </h3>
+      <span class="text-xs font-mono text-gray-400 bg-gray-100 px-2 py-1 rounded">
+        {work.year}
+      </span>
+    </div>
+    
+    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+      {work.description}
+    </p>
+
+    <div class="flex flex-wrap gap-2">
+      {work.tags.map(tag => (
+        <span class="text-xs font-medium text-gray-500 bg-gray-50 border border-gray-100 px-2 py-1 rounded-full">
+          #{tag}
+        </span>
+      ))}
+    </div>
+  </div>
+</a>
