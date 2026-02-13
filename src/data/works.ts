@@ -12,51 +12,50 @@ export interface Work {
 
 export const works: Work[] = [
   {
-    slug: "portfolio-site",
-    title: "Portfolio v1",
-    description: "My personal portfolio site built with Astro and Tailwind CSS.",
-    thumbnail: "https://placehold.co/600x400/1a1a1a/ffffff?text=Portfolio", // Placeholder for now
+    slug: "portfolio",
+    title: "ポートフォリオ",
+    description: "自分用 & 友達に見せる用のポートフォリオサイトとして開発。",
+    thumbnail: "https://placehold.co/600x400/1a1a1a/ffffff?text=Portfolio",
     tags: ["Astro", "Tailwind CSS", "TypeScript"],
-    year: "2024",
+    year: "2026",
     details: `
-      <h2>Overview</h2>
-      <p>This is my first portfolio site designed to showcase my works and skills. I focused on a clean, minimal design with high performance.</p>
-      <h2>Tech Stack</h2>
-      <ul>
-        <li>Astro for static site generation</li>
-        <li>Tailwind CSS for styling</li>
-        <li>TypeScript for type safety</li>
-      </ul>
-      <h2>Key Features</h2>
-      <p>The site is fully responsive and achieves a perfect score on Lighthouse.</p>
+      <p>かっこいいポートフォリオが欲しくて作りました。前までのものは少しダサかったので...</p>
+      <p>ReactとVueを触ったことがあったのですが、そこまで思いの使わなくてもいいなと思い、初めてAstroを使ってみました。</p>
+      <p>といっても、たたき台はAIに作ってもらい、文章や微調整のみ自分で行いました。</p>
+      <p>アクセスしたときの最初の画面に印象的で面白いものをおいておきたくて、あんな感じになりました。</p>
     `,
   },
   {
-    slug: "task-manager",
-    title: "Task Manager App",
-    description: "A simple task management application with drag-and-drop features.",
-    thumbnail: "https://placehold.co/600x400/2563eb/ffffff?text=Task+App",
-    tags: ["React", "DnD", "Vite"],
-    year: "2023",
+    slug: "baken",
+    title: "馬券シミュレーター",
+    description: "らんらんるーさんの依頼で開発した馬券をシミュレートするウェブアプリ。",
+    thumbnail: "https://placehold.co/600x400/2563eb/ffffff?text=baken+simulator",
+    tags: ["React", "Tailwind CSS", "TypeScript", "Django REST Framework"],
+    year: "2026",
     details: `
-      <h2>Overview</h2>
-      <p>A productivity tool to help users manage their daily tasks efficiently.</p>
-      <h2>Challenges</h2>
-      <p>Implementing smooth drag-and-drop interactions was the main challenge. I used React DnD library to achieve this.</p>
+      <p>未執筆</p>
     `,
   },
   {
-    slug: "weather-dashboard",
-    title: "Weather Dashboard",
-    description: "Real-time weather dashboard using OpenWeatherMap API.",
-    thumbnail: "https://placehold.co/600x400/eab308/ffffff?text=Weather",
-    tags: ["JavaScript", "API Integration", "Chart.js"],
-    year: "2023",
+    slug: "todo",
+    title: "Simple Stack TODO",
+    description: "シンプルを追求したTODOアプリ。",
+    thumbnail: "https://placehold.co/600x400/2563eb/ffffff?text=Simple+Stack+TODO",
+    tags: ["Electron", "Vibe coding"],
+    year: "2025",
     details: `
-      <h2>Overview</h2>
-      <p>Displays current weather and 5-day forecast for any city.</p>
-      <h2>Tech Details</h2>
-      <p>Used Fetch API to get data and Chart.js to visualize temperature trends.</p>
+      <p>未執筆</p>
+    `,
+  },
+  {
+    slug: "sia-songs",
+    title: "依澄しあ 歌検索",
+    description: "依澄しあの歌を検索するウェブアプリ。",
+    thumbnail: "https://placehold.co/600x400/eab308/ffffff?text=sia+songs",
+    tags: ["Vue.js", "Bootstrap", "Typescript", "Django REST Framework"],
+    year: "2025",
+    details: `
+      <p>未執筆</p>
     `,
   },
 ];

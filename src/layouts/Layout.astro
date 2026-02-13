@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-interface Props {
+type Props = {
   title: string;
   description?: string;
 }
@@ -25,11 +25,11 @@ const { title, description = "My Portfolio Site" } = Astro.props;
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body class="min-h-screen flex flex-col">
-    <main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="grow w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <slot />
     </main>
     <footer class="py-6 text-center text-sm text-zinc-500">
-      &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
+      &copy; {new Date().getFullYear()} atara-327. All rights reserved.
     </footer>
   </body>
 </html>
