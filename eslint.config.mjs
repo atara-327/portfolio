@@ -1,18 +1,15 @@
-import eslintPluginAstro from 'eslint-plugin-astro';
-import astroParser from 'astro-eslint-parser';
+import astroParser from "astro-eslint-parser";
+import eslintPluginAstro from "eslint-plugin-astro";
 
 export default [
+  {
+    ignores: [".astro/**", "node_modules/**", "dist/**"],
+  },
   ...eslintPluginAstro.configs.recommended,
   {
-    files: ['**/*.astro'],
+    files: ["**/*.astro"],
     languageOptions: {
       parser: astroParser,
     },
   },
-  {
-    rules: {
-      // override/add rules settings here, such as:
-      // "astro/no-set-html-directive": "error"
-    }
-  }
 ];

@@ -1,42 +1,18 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import WorkCard from "../components/WorkCard.astro";
-import { works } from "../data/works";
-
-const pageTitle = "Portfolio";
+import "@/styles/global.css";
 ---
 
-<Layout title={pageTitle}>
-  <section class="py-20 sm:py-32">
-    <div class="max-w-3xl">
-      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-100 mb-6">
-        Hello, I'm <span class="bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-indigo-400">ATARA</span>.
-      </h1>
-      <p class="text-xl text-zinc-400 leading-relaxed mb-8">
-        プログラミングが大好きな学生です。趣味でWebアプリを作成しています。
-      </p>
-      
-      <div class="flex gap-4">
-        <a href="/about" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-zinc-900 bg-zinc-100 hover:bg-white transition-colors">
-          About Me
-        </a>
-        <a href="#works" class="inline-flex items-center justify-center px-6 py-3 border border-zinc-700 text-base font-medium rounded-lg text-zinc-300 bg-transparent hover:bg-zinc-800 transition-colors">
-          View Works
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="works" class="py-16 border-t border-zinc-800">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="text-3xl font-bold text-zinc-100">Selected Works</h2>
-      <span class="hidden sm:block text-zinc-500 text-sm">A collection of projects I've worked on.</span>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {works.map((work) => (
-        <WorkCard work={work} />
-      ))}
-    </div>
-  </section>
-</Layout>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1 class="text-4xl">Astro</h1>
+    <button class="btn btn-error">hoge</button>
+  </body>
+</html>
