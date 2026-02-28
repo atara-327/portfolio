@@ -1,0 +1,40 @@
+---
+import BaseLayouts from "@/Layouts/BaseLayouts.astro";
+---
+
+<BaseLayouts>
+  <div class="mx-auto max-w-2xl py-8">
+    <h1 class="mb-8 text-3xl font-bold text-purple-400">About Me</h1>
+
+    <div
+      class="bg-base-200/30 border-base-200 rounded-2xl border p-8 shadow-lg shadow-purple-900/5"
+    >
+      <h2 class="text-base-content mb-4 text-2xl font-semibold">Atara</h2>
+      <p class="text-base-content/80 mb-8 text-lg leading-relaxed">
+        Web開発やアプリケーション制作に取り組んでいます。新しい技術を学ぶのが好きで、主にフロントエンド技術を中心に触っています。<br
+        />
+        このサイトでは、これまでに制作したものや、実験的なプロジェクトをシンプルにまとめています。
+      </p>
+
+      <h3 class="mb-4 text-lg font-semibold text-purple-300">Skills & Tools</h3>
+      <div class="flex flex-wrap gap-2.5">
+        {
+          [
+            "HTML/CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Astro",
+            "Tailwind CSS",
+            "Node.js",
+          ].map((skill) => (
+            <span class="badge badge-outline border-purple-500/30 px-4 py-3 text-purple-400/90 shadow-sm">
+              {skill}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayouts>

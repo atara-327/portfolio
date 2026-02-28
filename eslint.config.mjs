@@ -10,6 +10,10 @@ export default [
     files: ["**/*.astro"],
     languageOptions: {
       parser: astroParser,
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
     },
   },
 ];

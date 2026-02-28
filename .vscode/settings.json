@@ -2,5 +2,6 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.lint.unknownAtRules": "ignore",
-  "editor.indentSize": 2
+  "editor.indentSize": 2,
+  "cSpell.words": ["Atara"]
 }

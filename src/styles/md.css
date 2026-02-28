@@ -1,0 +1,103 @@
+@reference "./global.css";
+
+@layer components {
+  /* worksのmdコンテンツ（<Content />）内のみに適用されるスタイル */
+  .works-md-content {
+    @apply text-base-content text-base leading-relaxed;
+
+    & > *:first-child {
+      @apply mt-0;
+    }
+    & > *:last-child {
+      @apply mb-0;
+    }
+
+    h1 {
+      @apply border-base-300 text-primary mt-10 mb-6 border-b pb-2 text-4xl font-bold;
+    }
+    h2 {
+      @apply border-base-300 mt-10 mb-5 border-b pb-2 text-3xl font-semibold;
+    }
+    h3 {
+      @apply mt-8 mb-4 text-2xl font-medium;
+    }
+    h4 {
+      @apply mt-6 mb-4 text-xl font-medium;
+    }
+    h5 {
+      @apply mt-6 mb-4 text-lg font-medium;
+    }
+    h6 {
+      @apply text-base-content/80 mt-6 mb-4 text-base font-medium;
+    }
+
+    p {
+      @apply mb-6;
+    }
+
+    a {
+      @apply text-primary decoration-primary/30 hover:decoration-primary underline underline-offset-4 transition-all hover:opacity-80;
+    }
+
+    ul {
+      @apply mb-6 list-outside list-disc space-y-2 pl-6;
+    }
+    ol {
+      @apply mb-6 list-outside list-decimal space-y-2 pl-6;
+    }
+    li > ul,
+    li > ol {
+      @apply mt-2 mb-0;
+    }
+
+    blockquote {
+      @apply border-primary bg-base-200/50 text-base-content/80 mb-6 rounded-r-lg border-l-4 px-5 py-3 italic;
+    }
+    blockquote p:last-child {
+      @apply mb-0;
+    }
+
+    /* インラインコード */
+    :not(pre) > code {
+      @apply bg-base-200 text-primary border-base-300 rounded border px-1.5 py-0.5 font-mono text-sm;
+    }
+
+    /* コードブロック */
+    pre {
+      @apply bg-neutral text-neutral-content mb-6 overflow-x-auto rounded-xl p-5 font-mono text-sm shadow-md;
+    }
+    pre code {
+      @apply rounded-none border-none bg-transparent p-0 text-sm text-inherit;
+    }
+
+    /* 画像 */
+    img {
+      @apply mx-auto my-8 h-auto max-w-full rounded-xl shadow-md;
+    }
+
+    /* 水平線 */
+    hr {
+      @apply border-base-300 my-10;
+    }
+
+    /* テーブル */
+    table {
+      @apply border-base-300 mb-6 w-full border-collapse overflow-hidden rounded-lg border text-left shadow-sm;
+    }
+    thead {
+      @apply bg-base-200;
+    }
+    th {
+      @apply border-base-300 border-b p-3 font-semibold;
+    }
+    td {
+      @apply border-base-300 border-b p-3;
+    }
+    tr:nth-child(even) {
+      @apply bg-base-200/30;
+    }
+    tr:last-child td {
+      @apply border-b-0;
+    }
+  }
+}
