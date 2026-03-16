@@ -47,10 +47,10 @@ const { Content } = await work.render();
       </h1>
 
       {
-        work.data.year && (
+        work.data.date && (
           <div class="mb-6">
             <span class="badge badge-lg badge-outline border-purple-500/30 text-purple-400/80">
-              {work.data.year}
+              {new Date(work.data.date).getFullYear()}
             </span>
           </div>
         )

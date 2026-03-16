@@ -31,9 +31,9 @@ const { work } = Astro.props;
         {work.data.title}
       </h2>
       {
-        work.data.year && (
+        work.data.date && (
           <span class="badge badge-outline shrink-0 border-purple-500/30 text-xs text-purple-400/80">
-            {work.data.year}
+            {new Date(work.data.date).getFullYear()}
           </span>
         )
       }

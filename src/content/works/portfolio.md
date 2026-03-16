@@ -1,6 +1,7 @@
 ---
 title: "ポートフォリオ"
-year: 2026
+date: 2026-03-17
+isPublished: true
 tags: ["Astro", "Tailwind CSS", "daisyUI"]
 thumbnail: "/thumbnail/portfolio.png"
 ---
