@@ -3,10 +3,10 @@ title: "ポートフォリオ"
 date: 2026-03-17
 isPublished: true
 tags: ["Astro", "Tailwind CSS", "daisyUI"]
-thumbnail: "/thumbnail/portfolio.png"
+thumbnail: "/thumbnail/portfolio.webp"
 ---
 
-自身の制作物を把握・管理するための、自分用サイトとして作った。  
+自身の制作物を把握・管理するための、自分用サイトとして作った。
 
 Biomeも使ってみたかったが、`prettier-plugin-tailwindcss`と同様の機能の`useSortedClasses`がAstroで使えなかったため、いつも通りPrettier + ESLint構成にした。  
 UIライブラリなんか使ったほうがきれいになるんだろうなーって思ってshadcn使おうと思ったが、わざわざAstroにしたのにReactにしたくなくて結局daisyUIになった。  
