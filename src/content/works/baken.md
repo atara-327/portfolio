@@ -2,7 +2,7 @@
 title: "馬券シミュレーター"
 date: 2026-01-30
 isPublished: true
-tags: ["React", "Tailwind CSS", "DRF", "PostgreSQL"]
+tags: ["React", "Tailwind CSS", "DRF"]
 thumbnail: "/thumbnail/baken.webp"
 ---
 
